@@ -120,7 +120,7 @@ const File = () => {
                 <div className="child-container">
                     <h3>JSON TO EXCEL CONVERTER</h3>
                     <p>Here firstly you can upload json file, then select file types between csv and xlsx and then in response you will get excel file from selected file types. </p>
-                    <p><b>Note:- </b>
+                    <p><span className="warning-note">Note:- </span>
                         Please upload json file in proper format by adding things like double quote instead of single quote or removing things like
                         comma, semi-colon etc.
                         Accpted file extensions is .json.
@@ -142,7 +142,7 @@ const File = () => {
                 <div className="child-container">
                     <h3>EXCEL TO JSON CONVERTER</h3>
                     <p>Here firstly you can upload excel file then in response you will get json file. </p>
-                    <p><b>Note:- </b>
+                    <p><span className="warning-note">Note:- </span>
                         Please upload excel file in proper format by adding keys in header or first row and values in columns of respective keys.
                         Accepted file extensions are xls & xlsx formats.
                     </p>

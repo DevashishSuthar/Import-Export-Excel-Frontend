@@ -5,7 +5,7 @@ import File from './components/File';
 const App = () => {
   return (
     <Loader>
-      <div className="App">
+      <div className="container">
         <File />
       </div>
     </Loader>
