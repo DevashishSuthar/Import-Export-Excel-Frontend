@@ -2,7 +2,6 @@ import axios from 'axios';
 
 import { REACT_APP_API_URL } from './EnvConfig';
 import { showLoader, hideLoader } from '../screens/Common/Loader/LoaderActions';
-import { showErrorToastMessage } from '../utils/ToastUtils';
 import {store} from '../store/Store';
 
 const axiosInstance = axios.create({
