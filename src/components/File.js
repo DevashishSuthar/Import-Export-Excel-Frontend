@@ -3,6 +3,7 @@ import { Button, FormControl, FormLabel, FormControlLabel, Radio, RadioGroup } f
 
 import { REACT_APP_BASE_URL } from '../configs/EnvConfig';
 import { FILE_EXTENSIONS } from '../constants/FileExtensionsConstant';
+import { IMG_LOGO } from '../helpers/ImagesHelper';
 import { showErrorToastMessage, showSuccessToastMessage } from '../utils/ToastUtils';
 import { generateExcelFromJson, generateJsonFromExcel } from '../services/FileService';
 
@@ -116,6 +117,9 @@ const File = () => {
 
     return (
         <Fragment>
+            <div className="logo-container">
+                <img src={IMG_LOGO} alt="logo" />
+            </div>
             <div className="parent-container">
                 <div className="child-container">
                     <h3>JSON TO EXCEL CONVERTER</h3>
