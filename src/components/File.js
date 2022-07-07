@@ -138,8 +138,10 @@ const File = () => {
                             </RadioGroup>
                         </FormControl>
                         <br />
-                        <input type="file" ref={jsonFileRef} onChange={handleJsonFileChange} className="custom-file-input" />
-                        <br />
+                        <Button variant="contained" color="primary" className="file-upload-btn">
+                            Upload Your File
+                            <input type="file" ref={jsonFileRef} onChange={handleJsonFileChange} className="custom-file-input" />
+                        </Button>
                         <Button variant="outlined" disabled={!selectedJsonFile} onClick={handleJsonFileUpload}>Start Uploading Json File</Button>
                     </div>
                 </div>
@@ -150,8 +152,10 @@ const File = () => {
                         Please upload excel file in proper format by adding keys in header or first row and values in columns of respective keys.
                         Accepted file extensions are xls & xlsx formats.
                     </p>
-
-                    <input type="file" ref={excelFileRef} onChange={handleExcelFileChange} className="custom-file-input" />
+                    <Button variant="contained" color="primary" className="file-upload-btn">
+                        Upload Your File
+                        <input type="file" ref={excelFileRef} onChange={handleExcelFileChange} className="custom-file-input" />
+                    </Button>
                     <Button variant="outlined" disabled={!selectedExcelFile} onClick={handleExcelFileUpload}>Start Uploading Excel File</Button>
                 </div>
             </div>
