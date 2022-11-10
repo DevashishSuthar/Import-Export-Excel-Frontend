@@ -1,10 +1,13 @@
-import { createStore,applyMiddleware,compose } from 'redux';
-import thunk from 'redux-thunk';
+import { configureStore } from '@reduxjs/toolkit';
 
-import RootReducer from './RootReducer';
+import LoaderSlice from '../screens/Common/Loader/LoaderSlice';
 
-const composeEnhancers = compose;
-const middlewares = [thunk];
-const enhancers = composeEnhancers(applyMiddleware(...middlewares));
+const store = configureStore({
+    reducer: {
+        // Add all slice here
+        loaderData: LoaderSlice
+    },
+    devTools: process.env.NODE_ENV !== 'production'
+});
 
-export const store= createStore(RootReducer, enhancers);
+export default store;
